@@ -18,16 +18,16 @@ The dataset consists of:
 - Ground truth segmented images highlighting the tumor.
 - **Image Dimensions**: 240×240×155 pixels
 
-### Model
+## Model Used
 The segmentation task was performed using the **U-Net** model, which is particularly well-suited for image segmentation tasks due to its encoder-decoder architecture and skip connections. This model is ideal for medical image analysis, where precise pixel-level segmentation is required.
 
-## Model Architecture
+### Model Architecture
 - **Encoding Layer**: Extracts features from the input image.
 - **Decoding Layer**: Upsamples feature maps and generates the segmentation mask.
 - **Skip Connections**: Captures fine-grained spatial details by connecting the encoding and decoding paths.
 - **Fully Convolutional Layer**: Processes images of any size and produces segmentation masks of the same size.
 
-### Evaluation
+## Evaluation
 The performance of the model was evaluated using the **DICE score**, which measures the overlap between the predicted segmentation and the ground truth segmentation. A higher DICE score indicates better performance, with a score of 1.0 representing a perfect overlap.
 
 ## Kaggle Notebook
